@@ -1,0 +1,17 @@
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/RatingMicroservicesDB
+      username: postgres
+      password: prashik 
+      driver-class-name: org.postgresql.Driver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+ 
